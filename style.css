@@ -1,0 +1,171 @@
+/*
+*	BASIC ==================================================
+*/
+
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 10pt;
+	padding-top: 80px;
+	background: #eee;
+}
+
+ul.reset, ol.reset {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/*
+*	NAV VIEW ==================================================
+*/
+
+header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background: #D85B44;
+	color: #fff;
+	margin: 0 0 20px;
+	padding: 20px;
+}
+header h1 { margin: 0;}
+
+
+
+.nav-wrap {
+	position: absolute;
+	top: 10%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #BA3A23;
+	color: #fff;
+}
+.nav-list li {
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+}
+/*
+*	GENERAL VIEWS ==================================================
+*/
+
+.section-header {
+	margin: 0 1%;
+	height: 30vh;
+	text-align: center;
+
+}
+.section-header::before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em; /* Adjusts for spacing */
+
+}
+.section-header-content {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+/*
+*	START VIEW ==================================================
+*/
+
+
+
+ul.menuboxes {
+	list-style: none;
+	padding: 0.5%;
+	margin:0;
+	text-align: left;
+}
+
+.menuboxes .menubox {
+	display: inline-block;
+	width: 49%;
+	height: 100px;
+	margin: 2px 0.5%;
+	padding: 0;
+	text-align: center;
+	background-color: #D85B44;
+	color: #fff;
+}
+.menuboxes .menubox:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em; /* Adjusts for spacing */
+}
+.menuboxes .menubox > span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.menuboxes .menubox:nth-child(2), .menuboxes .menubox:nth-child(6) { background: #2D8E73 } 
+.menuboxes .menubox:nth-child(3), .menuboxes .menubox:nth-child(7) { background: #329E57 }
+.menuboxes .menubox:nth-child(4), .menuboxes .menubox:nth-child(8) { background: #D87944}
+
+/*
+*	PANTRY VIEW ==================================================
+*/
+
+.textlist > li {
+	margin: 0 1%;
+	padding: 15px 10px;
+	border-bottom: 1px solid #bbb; 
+}
+.textlist > li:nth-child(1) {
+	border-top: 1px solid #bbb; 
+}
+
+
+/*
+*	WEEKPLAN ==================================================
+*/
+
+.weekplan-list li {
+	margin: 0 1% 10px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.weekplan-list .weekday-content,
+.weekplan-list .weekday-header  {
+	padding: 15px;
+}
+
+.weekplan-list .weekday-header {
+	background: orange;
+	color: #fff;
+}
+
+.weekplan-list .weekday-content {
+	background: #fff;
+}
+
+
+
+/*
+*	VIEWPORT ==================================================
+*/
+
+@media only screen and (min-width: 500px) {
+	.view-container {
+        width: 600px;
+        margin: 0 auto;
+        background: white;
+        padding: 50px 30px;
+    }
+}
+
+
+
